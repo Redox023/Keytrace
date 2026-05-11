@@ -19,7 +19,7 @@ KeyTrace will not run until you create a `CONSENT.md` file in the project root a
 
 ## Why This Exists
 
-Most "beginner keylogger" projects show that the author can call `pynput.Listener`. KeyTrace is built to demonstrate something different: that the author understands the *full security lifecycle* around a credential-stealing tool — from collection, to storage hygiene, to exfiltration, to detection engineering.
+Most "beginner keylogger" projects show that you can call `pynput.Listener`. KeyTrace is built to demonstrate something different: that I understand the _full security lifecycle_ around a credential-stealing tool — from collection, to storage hygiene, to exfiltration, to detection engineering.
 
 Every feature in this project maps to a real-world security competency:
 
@@ -32,7 +32,7 @@ Every feature in this project maps to a real-world security competency:
 | Statistical anomaly detection (z-score over baseline) | Lightweight UEBA, baseline modeling |
 | Automatic redaction of CC/SSN/JWT/API-key patterns | DLP engineering, regex hardening |
 | MITRE ATT&CK mapping | Threat-informed defense literacy |
-| Shipped YARA + Sigma detection rules | Detection engineering, purple-team mindset |
+| Shipped YARA + Sigma rules | Detection engineering, purple-team mindset |
 | Consent-gated execution | Secure-by-default tooling, ethical disclosure |
 
 ---
@@ -86,8 +86,8 @@ Full details in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). MITRE ATT&CK map
 ## Quick Start
 
 ```bash
-git clone https://github.com/Redox023/Keytrace-.git
-cd Keytrace-
+git clone https://github.com/Redox023/keytrace.git
+cd keytrace
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 
