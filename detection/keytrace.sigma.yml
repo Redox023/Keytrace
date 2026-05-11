@@ -1,0 +1,34 @@
+title: KeyTrace Educational Keylogger Execution
+id: 8c4e2f9a-1d77-4b1e-9a3a-71f9d0e4c2a1
+status: experimental
+description: |
+  Detects execution of the KeyTrace educational keylogger via Python child
+  of a user shell or explorer.exe, with pynput in the command line and a
+  KEYTRACE_PASS environment variable.
+author: KeyTrace Educational Project
+date: 2026/05/11
+references:
+  - https://github.com/<you>/keytrace
+tags:
+  - attack.collection
+  - attack.t1056.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_img:
+    Image|endswith:
+      - '\python.exe'
+      - '\pythonw.exe'
+      - '\python3.exe'
+  selection_cmd:
+    CommandLine|contains:
+      - 'keytrace'
+      - 'pynput'
+  selection_env:
+    Environment|contains: 'KEYTRACE_PASS'
+  condition: selection_img and (selection_cmd or selection_env)
+falsepositives:
+  - Legitimate red-team engagements running this tool with authorization
+  - Security training environments
+level: medium

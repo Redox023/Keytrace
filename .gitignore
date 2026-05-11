@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.venv/
+venv/
+
+# KeyTrace runtime
+logs/
+*.kt.enc
+CONSENT.md           # do not commit signed consent files
+baseline.json
+.keytrace_pass       # never commit secrets
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Graphify (generated — rebuild with /graphify)
+graphify-out/
+
+# Temp scripts created during setup
+detect.py
+ast_extract.py
+label.py
+build_graph.py

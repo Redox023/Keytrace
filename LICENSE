@@ -1,0 +1,40 @@
+MIT License with Educational-Use Rider
+
+Copyright (c) 2026 KeyTrace Educational Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+EDUCATIONAL-USE RIDER
+
+This Software is published for security education and authorized security
+research purposes only. By using, modifying, or distributing this Software,
+you affirm that:
+
+  (a) You will not use the Software to monitor, capture, or otherwise collect
+      data from any computer system without the explicit written authorization
+      of the system owner and the informed consent of every user of that
+      system; and
+
+  (b) You will not bundle, fork, or republish this Software in a form that
+      removes or weakens the consent-gate mechanism implemented in
+      keytrace/ethics/consent.py without prominently disclosing that change
+      to downstream users.
+
+Unauthorized keystroke monitoring is a criminal offense in most jurisdictions.
+The authors disclaim all liability for misuse.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
