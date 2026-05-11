@@ -86,8 +86,8 @@ Full details in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). MITRE ATT&CK map
 ## Quick Start
 
 ```bash
-git clone https://github.com/<you>/keytrace.git
-cd keytrace
+git clone https://github.com/Redox023/Keytrace-.git
+cd Keytrace-
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 
@@ -147,9 +147,9 @@ The threat model is intentionally incomplete in places — see [`docs/THREAT-MOD
 
 ---
 
-## What I'd Talk About in an Interview
+## The Elevator Pitch
 
-If you fork this for your portfolio, here's the elevator pitch:
+If you're wondering what makes this project different from a standard keylogger tutorial, here is the elevator pitch:
 
 > "KeyTrace is an educational keystroke-telemetry framework I built to teach myself the full lifecycle of a credential-collection tool — not just the capture mechanic, but encryption at rest with AES-GCM, tamper-evident logging via an HMAC chain, behavioral biometrics through dwell/flight-time extraction, statistical anomaly detection, and DLP-style PII redaction. The interesting part is that I also shipped the YARA and Sigma rules to detect it — so the project demonstrates I can build offensive tooling and then reason about how a SOC would catch it. Every feature is mapped to a MITRE ATT&CK technique in the docs."
 
